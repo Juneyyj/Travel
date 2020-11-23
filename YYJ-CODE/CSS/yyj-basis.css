@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+
+body,h1,h2,h3,ol,ul,p,figure{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(78, 106, 165, 0.25);
+    font-family: "Helvertia Neue", Helvertia, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "宋体", simsun, sans-serif;
+}
+ul,ol{
+    list-style: outside none none;
+}
+a{
+    text-decoration: #ff3a3d;
+}
+.none{
+    display: none;
+}
+
+/*顶部区域*/
+#header{
+    width: 100%;
+    height: 70px;
+    background: #008B45;
+	min-width: 1263px;
+    font-size: 18px;
+    box-shadow: 0px 1px 10px aliceblue;
+    z-index: -9999;
+}
+#header .center{
+	width: 1263px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#header .logo{
+    width: 300px;
+    height: 70px;
+    background-image:url("../img/logo.png") ;
+    text-indent: -9999px;
+    float: left;
+}
+/*网站导航*/
+#header .link{
+	width: 650px;
+	height: 70px;
+	color: #eee;
+	line-height: 70px;
+	float: right;
+}
+#header .link li{
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+#header .link a{
+	color: white;
+	display: block;
+}
+#header .active a{
+	background-color: #cd8d90;
+}
+#header .link a:hover{
+	background-color:#43CD80;
+}
+
+/*底部区域*/
+/*
+#footer{
+    min-width: 1263px;
+    height: 320px;
+    background-color: #008B45;
+    opacity: 0.9;
+    top: 20px;
+    clear: both;
+    position: relative;
+}
+#footer .top{
+    width: 1263px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer .block{
+    width: 410px;
+    height: 250px;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+}
+#footer h2{
+	font-size: 20px;
+	font-weight: normal;
+	padding: 20px 0 0 20px;
+}
+#footer ul{
+	font-size: 16px;
+	text-indent: 20px;
+	line-height: 2;
+}
+!*分割线*!
+#footer hr{
+	width: 90%;
+	border: 1px dashed #aaa;
+}
+#footer .bottom {
+    height: 70px;
+    background-color: #008B45;
+    text-align: center;
+    line-height: 70px;
+    border-top: 3px solid #00A555;
+}
+*/
+
+#footer{
+    min-width: 1263px;
+    height: 320px;
+    top: 20px;
+    position: relative;
+    clear: both;/*清除左右两边的浮动元素*/
+}
+#footer .top{
+    min-width: 1263px;
+    height: 250px;
+   background-color: #008B45;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer .block{
+    width: 410px;
+    height: 250px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;/*让底部三块文字水平显示*/
+}
+#footer h2{
+    font-size: 25px;
+    font-style: normal;
+    padding: 20px 0 0 20px;
+    text-align: left;
+}
+#footer ul{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    text-indent: 20px;/*首行缩进*/
+}
+#footer hr{
+    width: 90%;
+    border: 1px dashed #aaa;
+
+}
+#footer .bottom{
+    height: 70px;
+    background-color: #43CD80;
+    text-align: center;
+    border-top: 1px solid #7fffa5;
+    line-height: 70px;/*设置行高*/
+    opacity: 0.6;
+}
